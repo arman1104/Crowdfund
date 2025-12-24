@@ -1,4 +1,4 @@
-import NavIcon from "../assets/images/logo.svg";
+import NavIcon from "../../assets/images/logo.svg";
 
 const Navbar = () => {
   return (

@@ -1,6 +1,8 @@
 import React from "react";
-import heroBg from "../assets/images/image-hero-desktop.jpg";
-import Navbar from "./Navbar";
+
+import heroBg from "../../assets/images/image-hero-desktop.jpg";
+import Navbar from "../navbar/Navbar";
+// import HeroCard from "./HeroCard";
 
 const HeroSection = () => {
   return (
@@ -12,7 +14,8 @@ const HeroSection = () => {
       <Navbar />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/10" />
+      {/* <HeroCard /> */}
     </section>
   );
 };

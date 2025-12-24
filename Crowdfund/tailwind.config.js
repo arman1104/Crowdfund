@@ -7,6 +7,9 @@ export default {
       maxWidth: {
         1440: "1440px",
       },
+      fontFamily: {
+        commissioner: ["Commissioner", "sans-serif"],
+      },
     },
   },
   plugins: [],

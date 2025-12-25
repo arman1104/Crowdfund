@@ -1,5 +1,5 @@
 import RewardCard from "../rewards/RewardCard";
-import { rewards } from "../../types/reward";
+import { rewards } from "../../data/reward";
 
 const AboutSection = () => {
   return (

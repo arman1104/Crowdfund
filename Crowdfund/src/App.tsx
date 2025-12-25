@@ -1,6 +1,7 @@
 import AboutSection from "./components/about/AboutSection";
 import HeroCard from "./components/hero/HeroCard";
 import HeroSection from "./components/hero/HeroSection";
+import BackThisProject from "./components/modal/backthisproject/BackThisProject";
 import StatsCard from "./components/stats/StatsCard";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       </div>
       <StatsCard />
       <AboutSection />
+      <BackThisProject />
     </main>
   );
 };

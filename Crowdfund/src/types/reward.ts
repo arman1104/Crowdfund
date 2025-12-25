@@ -1,33 +1,30 @@
-// export interface Reward {
-//   id: number;
-//   title: string;
-//   pledge: number;
-//   description: string;
-//   left: number;
-// }
-
-// import { Reward } from "../types/reward";
-
-// export const rewards: Reward[] = [
-//   {
-//     id: 1,
-//     title: "Bamboo Stand",
-//     pledge: 25,
-//     description: "You get an ergonomic stand made of natural bamboo.",
-//     left: 101,
-//   },
-//   {
-//     id: 2,
-//     title: "Black Edition Stand",
-//     pledge: 75,
-//     description: "Black Special Edition stand with personal thank you.",
-//     left: 64,
-//   },
-//   {
-//     id: 3,
-//     title: "Mahogany Special Edition",
-//     pledge: 200,
-//     description: "Two special edition stands and a T-shirt.",
-//     left: 0,
-//   },
-// ];
+export const rewards = [
+  {
+    id: 1,
+    title: "Bamboo Stand",
+    pledge: "Pledge $25 or more",
+    // description: "You get an ergonomic stand made of natural bamboo...",
+    description: `You get an ergonomic stand made of natural bamboo. You've helped us
+        launch our promotional campaign, and you'll be added to a special Backer
+        member list.`,
+    left: 101,
+  },
+  {
+    id: 2,
+    title: "Black Edition Stand",
+    pledge: "Pledge $75 or more",
+    // description: "A Black Special Edition stand with personal thank you...",
+    description: `You get a Black Special Edition stand with personal thank you.You'll be added to our Backer
+        member list.Shipping is included`,
+    left: 64,
+  },
+  {
+    id: 3,
+    title: "Mahogany Special Edition",
+    pledge: "Pledge $200 or more",
+    // description: "Two Special Edition Mahogany stands...",
+    description: `You get two Special Edition Mahogany stands,a Backer T-Shirt.and a personal thank you.You'll be added to our Backer
+        member list.Shipping is included.`,
+    left: 0,
+  },
+];

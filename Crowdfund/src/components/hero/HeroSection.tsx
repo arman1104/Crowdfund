@@ -1,5 +1,3 @@
-import React from "react";
-
 import heroBg from "../../assets/images/image-hero-desktop.jpg";
 import Navbar from "../navbar/Navbar";
 // import HeroCard from "./HeroCard";

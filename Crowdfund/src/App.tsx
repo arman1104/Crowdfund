@@ -1,5 +1,7 @@
+import AboutSection from "./components/about/AboutSection";
 import HeroCard from "./components/hero/HeroCard";
 import HeroSection from "./components/hero/HeroSection";
+import StatsCard from "./components/stats/StatsCard";
 
 const App = () => {
   return (
@@ -8,6 +10,8 @@ const App = () => {
       <div className="-mt-20">
         <HeroCard />
       </div>
+      <StatsCard />
+      <AboutSection />
     </main>
   );
 };

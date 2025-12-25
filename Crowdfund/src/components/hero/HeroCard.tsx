@@ -1,10 +1,9 @@
-import React from "react";
 import BookmarkImg from "../../assets/images/icon-bookmark.svg";
 import MasterCraftLogo from "../../assets/images/logo-mastercraft.svg";
 
 const HeroCard = () => {
   return (
-    <section className="relative mx-auto flex items-center justify-center border max-w-3xl h-full bg-white rounded-xl p-4">
+    <section className="relative mx-auto flex items-center justify-center border max-w-3xl h-full bg-white rounded-xl p-4 shadow-sm">
       <div className="mt-8 w-full text-center">
         <div className="absolute -top-7 left-1/2 -translate-x-1/2">
           <div className="h-12 w-12">

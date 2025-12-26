@@ -21,7 +21,7 @@ const HeroCard = ({ onBackProjectClick }: HeroCardProps) => {
         <p className="text-sm md:text-base text-gray-500 font-normal mt-2 px-4">
           A buitiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 sm:justify-between sm:gap-0 p-6 md:p-8 mx-0 md:mx-4">
+        <div className="flex sm:flex-row gap-4 sm:justify-between sm:gap-0 p-6 md:p-8 mx-0 md:mx-4">
           <button
             type="button"
             onClick={onBackProjectClick}
@@ -31,15 +31,23 @@ const HeroCard = ({ onBackProjectClick }: HeroCardProps) => {
           </button>
           <button
             type="button"
-            className="w-full sm:w-auto flex items-center justify-center gap-4 rounded-full bg-gray-200 pr-6 hover:bg-gray-300 transition"
+            className="
+    flex items-center justify-center
+    h-12 w-12
+    rounded-full
+    bg-gray-200
+    hover:bg-gray-300
+    transition
+    sm:h-auto sm:w-auto sm:rounded-full sm:pr-6
+  "
           >
-            {/* Icon circle */}
-            <span className="h-12 w-12">
+            {/* Icon */}
+            <span className="h-12 w-12 flex items-center justify-center">
               <img src={BookmarkImg} alt="bookmark icon" />
             </span>
 
-            {/* Text */}
-            <span className="text-sm font-bold text-gray-500 hidden sm:inline">
+            {/* Text – desktop only */}
+            <span className="hidden sm:inline text-sm font-bold text-gray-500">
               Bookmark
             </span>
           </button>

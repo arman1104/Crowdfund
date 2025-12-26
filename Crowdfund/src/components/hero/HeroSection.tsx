@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-[300px] md:h-[400px]">
+    <section className="relative w-full h-[300px] md:h-[300px]">
       {/* Desktop Background */}
       <div
         className="hidden md:block absolute inset-0 bg-cover bg-center"

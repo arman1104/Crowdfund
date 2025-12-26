@@ -43,7 +43,7 @@ const Navbar = () => {
           />
 
           {/* Menu */}
-          <div className="absolute top-20 left-6 right-6 z-40 bg-white rounded-lg shadow-lg md:hidden">
+          <div className="absolute top-16 left-6 right-6 z-40 bg-white rounded-lg shadow-lg md:hidden">
             <ul className="py-6">
               <li
                 className="px-6 py-4 border-b border-gray-200 cursor-pointer hover:bg-gray-50 text-gray-900 font-medium"

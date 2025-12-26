@@ -62,7 +62,7 @@ const BackThisProject = ({
       />
 
       {/* Modal */}
-      <div className="fixed inset-0 z-50 flex items-start md:items-center justify-center p-4 md:p-6 overflow-y-auto">
+      <div className="fixed inset-0 z-50 flex items-start md:items-center justify-center p-4 md:p-6">
         <section
           className="mt-4 md:mt-6 mx-auto max-w-3xl w-full rounded-xl bg-white px-6 md:px-10 py-8 md:py-10 relative"
           onClick={(e) => e.stopPropagation()}
@@ -78,7 +78,9 @@ const BackThisProject = ({
             />
           </div>
 
-          <h1 className="text-lg md:text-xl font-bold pr-8">Back this project</h1>
+          <h1 className="text-lg md:text-xl font-bold pr-8">
+            Back this project
+          </h1>
           <p className="mt-3 md:mt-4 text-sm md:text-base text-gray-500 font-normal">
             Want to support us in bringing Mastercraft Bamboo Monitor Riser out
             in the world?

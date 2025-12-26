@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import AboutSection from "./components/about/AboutSection";
 import HeroCard from "./components/hero/HeroCard";
 import HeroSection from "./components/hero/HeroSection";
@@ -9,20 +9,6 @@ import StatsCard from "./components/stats/StatsCard";
 const App = () => {
   const [isBackProjectModalOpen, setIsBackProjectModalOpen] = useState(false);
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
-
-  // Prevent body scroll when any modal is open
-  useEffect(() => {
-    if (isBackProjectModalOpen || isConfirmationModalOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
-    // Cleanup function to restore scroll when component unmounts
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isBackProjectModalOpen, isConfirmationModalOpen]);
 
   const handleOpenBackProjectModal = () => {
     setIsBackProjectModalOpen(true);

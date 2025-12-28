@@ -1,77 +1,9 @@
-// const RewardCard = () => {
-//   return (
-//     <section className="mx-auto mt-6 rounded-xl bg-white px-8 py-10 border border-gray-300">
-//       {/* Title row */}
-//       <div className="flex items-center justify-between">
-//         <h3 className="text-xl font-bold">Bamboo Stand</h3>
-//         <span className="text-sm font-medium text-teal-500">
-//           Pledge $25 or more
-//         </span>
-//       </div>
-
-//       {/* Description */}
-//       <p className="mt-4 text-base text-gray-500">
-// You get an ergonomic stand made of natural bamboo. You've helped us
-// launch our promotional campaign, and you'll be added to a special Backer
-// member list.
-//       </p>
-
-//       {/* Bottom row */}
-//       <div className="mt-6 flex items-center justify-between">
-//         {/* Left count */}
-//         <div className="flex items-center gap-2">
-//           <span className="text-2xl font-bold">101</span>
-//           <span className="text-sm text-gray-500">left</span>
-//         </div>
-
-//         {/* Button */}
-//         <button
-//           type="button"
-//           className="rounded-full bg-teal-500 px-8 py-3 text-sm font-bold text-white"
-//         >
-//           Select Reward
-//         </button>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default RewardCard;
-
 interface RewardCardProps {
   title: string;
   pledge: string;
   description: string;
   left: number;
 }
-
-// const RewardCard = ({ title, pledge, description, left }: RewardCardProps) => {
-//   return (
-//     <section className="mt-6 rounded-xl bg-white px-8 py-10 border border-gray-300">
-//       <div className="flex items-center justify-between">
-//         <h3 className="text-xl font-bold">{title}</h3>
-//         <span className="text-sm font-medium text-teal-500 cursor-pointer">
-//           {pledge}
-//         </span>
-//       </div>
-
-//       <p className="mt-4 text-base text-gray-500">{description}</p>
-
-//       <div className="mt-6 flex items-center justify-between">
-//         <div className="flex items-center gap-2">
-//           <span className="text-2xl font-bold">{left}</span>
-//           <span className="text-sm text-gray-500">left</span>
-//         </div>
-
-//         <button className="rounded-full bg-teal-500 px-8 py-3 text-sm font-bold text-white">
-//           Select Reward
-//         </button>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default RewardCard;
 
 const RewardCard = ({ title, pledge, description, left }: RewardCardProps) => {
   const isOutOfStock = left === 0;

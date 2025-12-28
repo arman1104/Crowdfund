@@ -28,14 +28,16 @@ const App = () => {
   };
 
   return (
-    <main className="bg-gray-100 min-h-screen">
+    <main className="min-h-screen">
       <HeroSection />
       <div className="-mt-20 px-4 md:px-0">
         <HeroCard onBackProjectClick={handleOpenBackProjectModal} />
       </div>
       <div className="px-4 md:px-0">
         <StatsCard />
-        <AboutSection />
+        <div className="mb-16">
+          <AboutSection />
+        </div>
       </div>
       <BackThisProject
         isOpen={isBackProjectModalOpen}

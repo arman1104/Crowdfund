@@ -30,12 +30,12 @@ const App = () => {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <div className="-mt-20 px-4 md:px-0">
+      <div className="-mt-20 md:-mt-8 px-4 md:px-0">
         <HeroCard onBackProjectClick={handleOpenBackProjectModal} />
       </div>
       <div className="px-4 md:px-0">
         <StatsCard />
-        <div className="mb-16">
+        <div className="mb-20">
           <AboutSection />
         </div>
       </div>

@@ -41,9 +41,9 @@ const BackThisProject = ({
       />
 
       {/* Modal */}
-      <div className="fixed inset-0 z-50 flex items-start md:items-center justify-center p-4 md:p-6">
+      <div className="fixed inset-0 z-50 flex items-start md:items-center justify-center p-4 md:p-6 overflow-y-auto md:overflow-y-hidden">
         <section
-          className="mt-4 md:mt-6 mx-auto max-w-3xl w-full rounded-xl bg-white px-6 md:px-10 py-8 md:py-10 relative"
+          className="mt-14 mb-8 md:mt-8 mx-auto max-w-3xl w-full rounded-xl bg-white px-6 md:px-10 py-8 md:py-10 relative"
           onClick={(e) => e.stopPropagation()}
         >
           <div

@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 
 interface RadioCardProps {
@@ -115,7 +113,9 @@ const RadioCard = ({
             )}
           </div>
 
-          <p className="mt-3 md:mt-2 text-xs md:text-sm text-gray-500">{description}</p>
+          <p className="mt-3 md:mt-2 text-xs md:text-sm text-gray-500">
+            {description}
+          </p>
 
           {/* Pledge input and Continue button - shown when selected */}
           {isSelected && (

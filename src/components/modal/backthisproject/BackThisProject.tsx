@@ -17,18 +17,18 @@ const BackThisProject = ({
   const [selectedId, setSelectedId] = useState<number | null>(null);
 
   // Reset selection when modal opens
-  useEffect(() => {
-    if (isOpen) {
-      setSelectedId(null);
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     setSelectedId(null);
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "";
+  //   }
 
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //   };
+  // }, [isOpen]);
 
   if (!isOpen) return null;
 

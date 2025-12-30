@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import iconCheck from "../../../assets/images/icon-check.svg";
 import closeModalIcon from "../../../assets/images/icon-close-modal.svg";
 
@@ -10,17 +10,17 @@ interface ConfirmationModalProps {
 const ConfirmationModal = ({ isOpen, onClose }: ConfirmationModalProps) => {
   if (!isOpen) return null;
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "";
+  //   }
 
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //   };
+  // }, [isOpen]);
 
   return (
     <>

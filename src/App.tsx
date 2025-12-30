@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AboutSection from "./components/about/AboutSection";
 import HeroCard from "./components/hero/HeroCard";
 import HeroSection from "./components/hero/HeroSection";
@@ -26,6 +26,18 @@ const App = () => {
   const handleCloseConfirmationModal = () => {
     setIsConfirmationModalOpen(false);
   };
+
+  useEffect(() => {
+    if (isBackProjectModalOpen || isConfirmationModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isBackProjectModalOpen, isConfirmationModalOpen]);
 
   return (
     <main className="min-h-screen">

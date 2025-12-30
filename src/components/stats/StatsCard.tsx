@@ -6,7 +6,9 @@ const StatsCard = () => {
         {/* Amount backed */}
         <div className="flex-1">
           <h3 className="text-3xl md:text-2xl font-bold">$89,914</h3>
-          <p className="mt-1 text-sm md:text-base text-gray-500">of $100,000 backed</p>
+          <p className="mt-1 text-sm md:text-base text-gray-500">
+            of $100,000 backed
+          </p>
         </div>
 
         {/* Divider */}
@@ -15,7 +17,9 @@ const StatsCard = () => {
         {/* Total backers */}
         <div className="flex-1">
           <h3 className="text-3xl md:text-2xl font-bold">5,007</h3>
-          <p className="mt-1 text-sm md:text-base text-gray-500">total backers</p>
+          <p className="mt-1 text-sm md:text-base text-gray-500">
+            total backers
+          </p>
         </div>
 
         {/* Divider */}

@@ -143,7 +143,7 @@ const RadioCard = ({
                     disabled={!isValidPledge}
                     className={`w-full sm:w-auto px-8 py-3 rounded-full text-sm font-bold text-white transition ${
                       isValidPledge
-                        ? "bg-teal-500 hover:bg-teal-600"
+                        ? "bg-teal-600 hover:bg-teal-700"
                         : "bg-gray-300 cursor-not-allowed"
                     }`}
                   >

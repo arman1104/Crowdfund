@@ -45,7 +45,7 @@ const RewardCard = ({ title, pledge, description, left }: RewardCardProps) => {
             ${
               isOutOfStock
                 ? "bg-gray-400 text-gray-500 cursor-not-allowed"
-                : "bg-teal-500 text-white hover:bg-teal-600 transition"
+                : "bg-teal-600 text-white hover:bg-teal-700 transition"
             }`}
         >
           {isOutOfStock ? "Out of Stock" : "Select Reward"}

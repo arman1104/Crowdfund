@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavIcon from "../../assets/images/logo.svg";
 import hamburgerIcon from "../../assets/images/icon-hamburger.svg";
 import closeMenuIcon from "../../assets/images/icon-close-menu.svg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className="absolute top-0 left-0 w-full z-20">

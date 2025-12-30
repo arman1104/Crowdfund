@@ -1,11 +1,15 @@
+import { useState } from "react";
 import BookmarkImg from "../../assets/images/icon-bookmark.svg";
 import MasterCraftLogo from "../../assets/images/logo-mastercraft.svg";
+// import { Bookmark } from "lucide-react";
 
 interface HeroCardProps {
   onBackProjectClick: () => void;
 }
 
 const HeroCard = ({ onBackProjectClick }: HeroCardProps) => {
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
   return (
     <section className="relative mx-auto flex items-center justify-center border max-w-3xl h-full bg-white rounded-xl p-6 md:p-4 shadow-sm">
       <div className="mt-8 w-full text-center">
@@ -25,12 +29,13 @@ const HeroCard = ({ onBackProjectClick }: HeroCardProps) => {
           <button
             type="button"
             onClick={onBackProjectClick}
-            className="w-full sm:w-auto text-sm font-bold py-3 px-8 bg-teal-500 text-white rounded-full"
+            className="w-full sm:w-auto text-sm font-bold py-3 px-8 bg-teal-600 text-white rounded-full"
           >
             Back this project
           </button>
           <button
             type="button"
+            onClick={() => setIsBookmarked((prev) => !prev)}
             className="
     flex items-center justify-center
     h-12 w-12
@@ -41,14 +46,47 @@ const HeroCard = ({ onBackProjectClick }: HeroCardProps) => {
     sm:h-auto sm:w-auto sm:rounded-full sm:pr-6
   "
           >
+            {/* <button
+            type="button"
+            onClick={() => setIsBookmarked((prev) => !prev)}
+            className={`
+    flex items-center justify-center
+    h-12 w-12
+    rounded-full
+    transition
+    ${
+      isBookmarked
+        ? "bg-gray-200 hover:bg-gray-300"
+        : "bg-gray-200 hover:bg-gray-300"
+    }
+    sm:h-auto sm:w-auto sm:rounded-full sm:pr-6
+  `}
+          > */}
             {/* Icon */}
+            {/* <span className="h-12 w-12 flex items-center justify-center">
+              <img src={BookmarkImg} alt="bookmark icon" className="" />
+            </span> */}
+
             <span className="h-12 w-12 flex items-center justify-center">
-              <img src={BookmarkImg} alt="bookmark icon" />
+              <img
+                src={BookmarkImg}
+                alt="bookmark icon"
+                // className={isBookmarked ? "brightness-0 invert" : ""}
+                className={isBookmarked ? "brightness-0 invert" : ""}
+              />
             </span>
 
             {/* Text – desktop only */}
-            <span className="hidden sm:inline text-sm font-bold text-gray-500">
+            {/* <span className="hidden sm:inline text-sm font-bold text-gray-500">
               Bookmark
+            </span> */}
+
+            <span
+              className={`hidden sm:inline text-sm font-bold ${
+                isBookmarked ? "text-teal-600" : "text-gray-400"
+              }`}
+            >
+              {isBookmarked ? "Bookmarked" : "Bookmark"}
             </span>
           </button>
         </div>

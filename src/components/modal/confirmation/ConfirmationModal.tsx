@@ -69,7 +69,7 @@ const ConfirmationModal = ({ isOpen, onClose }: ConfirmationModalProps) => {
           <button
             type="button"
             onClick={onClose}
-            className="w-full rounded-full bg-teal-500 px-8 py-3 text-sm font-bold text-white transition hover:bg-teal-600"
+            className="w-full rounded-full bg-teal-600 px-8 py-3 text-sm font-bold text-white transition hover:bg-teal-600"
           >
             Got it!
           </button>

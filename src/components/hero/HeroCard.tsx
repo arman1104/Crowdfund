@@ -48,14 +48,6 @@ const HeroCard = ({ onBackProjectClick }: HeroCardProps) => {
           >
             {/* Icon */}
 
-            {/* <span className="h-12 w-12 flex items-center justify-center">
-              <img
-                src={BookmarkImg}
-                alt="bookmark icon"
-                className={isBookmarked ? "brightness-0 invert" : ""}
-              />
-            </span> */}
-
             <div className="h-12 w-12 flex items-center justify-center ">
               <div
                 className={`flex items-center justify-center h-12 w-12 rounded-full transition

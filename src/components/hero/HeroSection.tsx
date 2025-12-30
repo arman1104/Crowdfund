@@ -1,7 +1,6 @@
 import heroBgDesktop from "../../assets/images/image-hero-desktop.jpg";
 import heroBgMobile from "../../assets/images/image-hero-mobile.jpg";
 import Navbar from "../navbar/Navbar";
-// import HeroCard from "./HeroCard";
 
 const HeroSection = () => {
   return (
@@ -22,7 +21,6 @@ const HeroSection = () => {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/10" />
-      {/* <HeroCard /> */}
     </section>
   );
 };

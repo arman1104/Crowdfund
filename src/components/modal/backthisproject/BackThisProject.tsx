@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { radio } from "../../../data/reward";
 import RadioCard from "./RadioCard";
 import closeModalIcon from "../../../assets/images/icon-close-modal.svg";

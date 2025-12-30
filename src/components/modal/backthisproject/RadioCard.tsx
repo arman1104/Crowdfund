@@ -24,7 +24,7 @@ const RadioCard = ({
   const isSelected = selectedId === id;
   const isOutOfStock = left === 0;
 
-  // Extract minimum pledge amount from pledge string (e.g., "Pledge $25 or more" -> 25)
+  // Extract minimum pledge amount from pledge string
   const getMinPledge = (pledgeStr?: string): number => {
     if (!pledgeStr) return 0;
     const match = pledgeStr.match(/\$(\d+)/);

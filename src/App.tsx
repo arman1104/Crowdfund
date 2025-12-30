@@ -39,6 +39,33 @@ const App = () => {
     };
   }, [isBackProjectModalOpen, isConfirmationModalOpen]);
 
+  // useEffect(() => {
+  //   if (isBackProjectModalOpen || isConfirmationModalOpen) {
+  //     const scrollY = window.scrollY;
+
+  //     document.body.style.position = "fixed";
+  //     document.body.style.top = `-${scrollY}px`;
+  //     document.body.style.left = "0";
+  //     document.body.style.right = "0";
+  //   } else {
+  //     const scrollY = document.body.style.top;
+
+  //     document.body.style.position = "";
+  //     document.body.style.top = "";
+  //     document.body.style.left = "";
+  //     document.body.style.right = "";
+
+  //     window.scrollTo(0, parseInt(scrollY || "0") * -1);
+  //   }
+
+  //   return () => {
+  //     document.body.style.position = "";
+  //     document.body.style.top = "";
+  //     document.body.style.left = "";
+  //     document.body.style.right = "";
+  //   };
+  // }, [isBackProjectModalOpen, isConfirmationModalOpen]);
+
   return (
     <main className="min-h-screen">
       <HeroSection />
@@ -47,7 +74,7 @@ const App = () => {
       </div>
       <div className="px-4 md:px-0">
         <StatsCard />
-        <div className="mb-20">
+        <div className="mb-14">
           <AboutSection />
         </div>
       </div>

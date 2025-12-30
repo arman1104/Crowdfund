@@ -54,7 +54,9 @@ const RadioCard = ({
 
   const minPledge = getMinPledge(pledge);
   const currentPledge = parseInt(pledgeAmount, 10) || 0;
-  const isValidPledge = minPledge === 0 || currentPledge >= minPledge;
+  // const isValidPledge = minPledge === 0 || currentPledge >= minPledge;
+  const isValidPledge =
+    currentPledge > 0 && (minPledge === 0 || currentPledge >= minPledge);
 
   return (
     <div

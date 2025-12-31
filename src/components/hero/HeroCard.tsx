@@ -37,14 +37,14 @@ const HeroCard = ({ onBackProjectClick }: HeroCardProps) => {
             type="button"
             onClick={() => setIsBookmarked((prev) => !prev)}
             className="
-    flex items-center justify-center gap-1
-    h-12 w-12
-    rounded-full
-    bg-gray-200
-    hover:bg-gray-300
-    transition
-    sm:h-auto sm:w-auto sm:rounded-full sm:pr-6 
-  "
+            flex items-center justify-center gap-1
+            h-12 w-12
+            rounded-full
+           bg-gray-200
+           hover:bg-gray-300
+            transition
+            sm:h-auto sm:w-auto sm:rounded-full sm:pr-6
+            "
           >
             {/* Icon */}
 
